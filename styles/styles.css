@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -11,25 +17,77 @@ Table of Contents:
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+:root {
+    --geel-color: #F9C48B;
+    --oranje-color: #F69051;
+    --rood-color: #F26D40;
+    --bruin-color: #260803;
+    --wit-color: #FDEFEC;
+}
+
 
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
 }
 
+img {
+    max-width: 100%;
+    margin: 0.5rem 0;
+}
+
 /*////////////////////////
     2. Typography
 ////////////////////////*/
-
-
+h2 {
+    padding: 1rem 0;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
-
-
-
+section {
+    background-color: var(--wit-color);
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 2rem;
+}
 
 /*////////////////////////
     2. Media Queries
 ////////////////////////*/
+/*buiten media is voor mobiele apparaten*/
+body {
+    background-color: var(--geel-color);
+
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--rood-color);
+}
+
+/*voor tablets*/
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    body {
+        background-color: var(--oranje-color);
+    }
+}
+
+/*voor beeldschermen*/
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+
+
+
